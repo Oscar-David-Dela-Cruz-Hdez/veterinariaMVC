@@ -1,7 +1,7 @@
     <header>
-        <h1>Planeta Mascotas</h1>
         <div>
-            <img src="/resources/" alt="">
+            <img src="<?php echo APP_URL; ?>app/views/img/123.png" alt="" with="50px" height="50px">
+            <h1>Planeta Mascotas</h1>
         </div>
         <form class="busqueda">
             <input type="search" id="barra_busqueda" placeholder="Buscar barritas de cereal">
