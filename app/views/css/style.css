@@ -410,3 +410,58 @@ ul a {
 ul a:hover {
     text-decoration: underline;
 }
+
+
+/* Slider de productos */
+.product-slider {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-track {
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.slide img {
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.slide h3, .slide .price, .slide .stock {
+    margin: 10px 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

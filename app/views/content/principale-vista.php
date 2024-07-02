@@ -13,40 +13,52 @@
         </nav>
     </header>
     
-    <main class="product-list">
-        <div class="product-card">
-            <img src="<?php echo APP_URL; ?>app/views/img/asd.png" alt="Producto 1">
-            <h3><i class="fas fa-paw"></i> Alimento</h3>
-            <p class="price">$50</p>
-            <p class="stock">En existencia</p>
-        </div>
-        <div class="product-card">
-            <img src="<?php echo APP_URL; ?>app/views/img/asdfdf.jpg" alt="Producto 2">
-            <h3><i class="fas fa-paw"></i> Juguetes</h3>
-            <p class="price">$60</p>
-            <p class="stock">En existencia</p>
-        </div>
-        <div class="product-card">
-            <img src="<?php echo APP_URL; ?>app/views/img/asdfsd.jpg" alt="Producto 3">
-            <h3><i class="fas fa-paw"></i> Productos de limpieza</h3>
-            <p class="price">$70</p>
-            <p class="stock">En existencia</p>
-        </div>
-    </main>
-    <!-- Modal -->
-    <div id="productModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImage" src="" alt="Product Image">
-            <h3 id="modalTitle"></h3>
-            <p id="modalDescription"></p>
-            <p class="price" id="modalPrice"></p>
-            <p class="stock" id="modalStock"></p>
-            <label for="quantity">Cantidad:</label>
-            <input type="number" id="quantity" name="quantity" value="1" min="1">
-            <button id="addToCartButton"><i class="fas fa-shopping-cart"></i> Agregar al carrito</button>
+    <main class="product-slider">
+    <div class="slider">
+        <div class="slider-track">
+            <div class="slide">
+                <img src="<?php echo APP_URL; ?>app/views/img/asd.png" alt="Producto 1">
+                <h3><i class="fas fa-paw"></i> Alimento</h3>
+                <p class="price">$50</p>
+                <p class="stock">En existencia</p>
+            </div>
+            <div class="slide">
+                <img src="<?php echo APP_URL; ?>app/views/img/asdfdf.jpg" alt="Producto 2">
+                <h3><i class="fas fa-paw"></i> Juguetes</h3>
+                <p class="price">$60</p>
+                <p class="stock">En existencia</p>
+            </div>
+            <div class="slide">
+                <img src="<?php echo APP_URL; ?>app/views/img/asdfsd.jpg" alt="Producto 3">
+                <h3><i class="fas fa-paw"></i> Productos de limpieza</h3>
+                <p class="price">$70</p>
+                <p class="stock">En existencia</p>
+            </div>
         </div>
     </div>
+    <button class="prev">&lt;</button>
+    <button class="next">&gt;</button>
+</main>
+
+<!-- Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="Product Image">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <p class="price" id="modalPrice"></p>
+        <p class="stock" id="modalStock"></p>
+        <label for="quantity">Cantidad:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1">
+        <button id="addToCartButton"><i class="fas fa-shopping-cart"></i> Agregar al carrito</button>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="app/views/js/script2.js"></script>
+<script src="app/views/js/vistaProducto.js"></script>
+
 
     <footer>
         <center>
@@ -78,5 +90,3 @@
             </div>
         </div></center>
     </footer>
-    <!-- El script para el modal -->
-    <script src="/public/Script/vistaProducto.js"></script> 
